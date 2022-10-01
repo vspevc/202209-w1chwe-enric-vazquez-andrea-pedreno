@@ -5,6 +5,7 @@
 
 .main-header {
   border-bottom: 1px solid colors.$color-font-main-light;
+  color: colors.$color-main;
 
   &__container {
     display: flex;
@@ -14,12 +15,17 @@
     padding: 34px measures.$mobile-horizontal-padding;
     max-width: 480px;
     height: 120px;
-    color: colors.$color-main;
   }
 
   &__title {
     font-size: 2.2rem;
     font-weight: 700;
+  }
+
+  &--menu-open {
+    background-color: colors.$color-main;
+    color: colors.$color-font-alternative;
+    border-bottom-color: colors.$color-font-alternative-dark;
   }
 
   @include media-queries.screen-min {
