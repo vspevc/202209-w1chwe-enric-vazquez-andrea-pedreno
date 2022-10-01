@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "sass-watch": "sass --watch sass/styles.scss css/styles.css",
+    "sass": "sass sass/styles.scss css/styles.css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "husky": "^8.0.0"
+    "husky": "^8.0.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "fontawesome": "^5.6.3",
+    "normalize.css": "^8.0.1"
   }
 }
