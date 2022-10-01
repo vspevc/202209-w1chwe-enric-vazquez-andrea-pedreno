@@ -1,0 +1,10 @@
+@use "../variables/colors";
+@use "../variables/measures";
+
+.main-header {
+  padding: 34px measures.$mobile-horizontal-padding;
+
+  &__title {
+    color: colors.$color-main;
+  }
+}
