@@ -1,10 +1,31 @@
 @use "../variables/colors";
 @use "../variables/measures";
 
+@use "../mixins/media-queries";
+
 .main-header {
-  padding: 34px measures.$mobile-horizontal-padding;
+  border-bottom: 1px solid colors.$color-font-main-light;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 34px measures.$mobile-horizontal-padding;
+    max-width: 480px;
+    height: 120px;
+    color: colors.$color-main;
+  }
 
   &__title {
-    color: colors.$color-main;
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  @include media-queries.screen-min {
+    &__container {
+      padding: 0 measures.$desktop-horizontal-padding;
+      max-width: 1200px;
+    }
   }
 }
