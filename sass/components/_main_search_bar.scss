@@ -25,7 +25,7 @@
     color: colors.$color-font-main-dark;
     font-size: 1rem;
     width: 100%;
-    height: 55px;
+    height: 60px;
     border-radius: 20px;
     border-width: 3px;
     border-style: solid;
@@ -39,6 +39,7 @@
 
   @media (min-width: 1200px) {
     max-width: 1200px;
+    padding: 60px measures.$desktop-horizontal-padding;
 
     &__filters {
       flex-direction: row;
@@ -54,4 +55,3 @@
     }
   }
 }
-
