@@ -8,8 +8,32 @@
 .secondary-menu {
   background-color: colors.$color-main;
 
+  &--light {
+    background-color: inherit;
+    display: none;
+
+    @include media-queries.screen-min {
+      display: block;
+      background-color: none;
+      color: colors.$color-font-main-light;
+    }
+
+    & .secondary-menu__title {
+      color: colors.$color-font-main-dark;
+      font-size: 1.3rem;
+      padding: 0 0 25px;
+    }
+    & .secondary-menu__link {
+      color: colors.$color-font-main-light;
+      padding: 5px 0;
+    }
+    & .secondary-menu__link:hover {
+      background-color: inherit;
+    }
+  }
+
   &__title {
-    background-color: colors.$color-main;
+    background-color: inherit;
   }
 
   &__links {
@@ -20,6 +44,11 @@
 
     &--closed {
       display: none;
+    }
+
+    &__footer-information {
+      background-color: inherit;
+      font-size: 0.5rem;
     }
   }
 

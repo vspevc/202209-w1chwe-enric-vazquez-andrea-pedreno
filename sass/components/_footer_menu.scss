@@ -1,0 +1,64 @@
+@use "../variables/colors";
+@use "../variables/measures";
+
+.footer-information {
+  padding: 60px measures.$mobile-horizontal-padding;
+  max-width: measures.$mobile-max-width;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: colors.$color-font-main-light;
+  font-size: 1.3rem;
+  line-height: 30px;
+  padding: 35px 30px 100px 30px;
+
+  @media (min-width: 1200px) {
+    padding: 60px measures.$desktop-horizontal-padding;
+    max-width: measures.$desktop-max-width;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.9rem;
+  }
+
+  &__separator {
+    display: flex;
+    gap: 70px;
+  }
+}
+
+.contact-information {
+  font-style: normal;
+  text-align: left;
+
+  &__title {
+    color: colors.$color-font-main-dark;
+    font-size: 1.3rem;
+    padding: 0 0 25px;
+  }
+
+  &__email {
+    text-decoration: none;
+    color: colors.$color-main;
+  }
+
+  &__telephone {
+    text-decoration: none;
+    color: colors.$color-font-main-light;
+  }
+}
+
+.copyright {
+  color: colors.$color-font-main-dark;
+  text-align: center;
+  width: 100%;
+
+  &__copyright {
+    font-weight: 600;
+  }
+  @media (min-width: 1200px) {
+    text-align: left;
+    max-width: 250px;
+  }
+}

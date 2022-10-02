@@ -18,11 +18,6 @@
     height: measures.$header-height;
   }
 
-  &__title {
-    font-size: 2.2rem;
-    font-weight: 700;
-  }
-
   &--menu-open {
     background-color: colors.$color-main-dark;
     color: colors.$color-font-alternative;
