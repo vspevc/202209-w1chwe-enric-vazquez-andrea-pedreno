@@ -20,7 +20,8 @@ h2 {
 
 .search-box {
   padding: 60px measures.$mobile-horizontal-padding;
-  width: 480px;
+  width: 100%;
+  max-width: 480px;
 
   &__filters {
     background-color: colors.$color-main-dark;
