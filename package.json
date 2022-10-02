@@ -13,9 +13,5 @@
   "devDependencies": {
     "husky": "^8.0.0",
     "sass": "^1.55.0"
-  },
-  "dependencies": {
-    "fontawesome": "^5.6.3",
-    "normalize.css": "^8.0.1"
   }
 }
