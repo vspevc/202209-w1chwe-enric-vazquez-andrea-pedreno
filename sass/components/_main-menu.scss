@@ -24,7 +24,7 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    // max-width: measures.$mobile-max-width;
+    max-width: measures.$mobile-max-width;
     list-style: none;
 
     @include media-queries.screen-min {
