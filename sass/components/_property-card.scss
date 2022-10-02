@@ -3,7 +3,7 @@
 @use "../mixins/media-queries";
 
 .property-card {
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 20px;
   padding: 40px 0;
