@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Formulari per a contactar amb nosaltres."
+    />
+    <title>Contacte / Les dues fantàstiques</title>
+    <link rel="icon" href="assets/img/avengers.png" />
+  </head>
+  <body>
+    <header>
+      <p>Les dues fantàstiques</p>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inici</a></li>
+          <li><a href="qui-som.html">Qui som</a></li>
+          <li><a href="curriculums.html">CV</a></li>
+          <li><a href="contacte.html">Contacte</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Contacte</h1>
+      <p>
+        Si vols posar-te en contacte amb nosaltres per qualsevol motiu omple el
+        següent formulari perquè puguem localitzar-te, estarem encantades de
+        respondre qualsevol dubte.
+      </p>
+      <form action="/enviar-resposta">
+        <label for="name">Nom</label>
+        <input id="name" type="text" placeholder="Escriu el teu nom" />
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="text"
+          placeholder="Escriu el teu email"
+          required
+        />
+        <label for="comments">Comentaris</label>
+        <textarea
+          id="comments"
+          type="text"
+          placeholder="Indica els teus comentaris"
+        ></textarea>
+        <input type="submit" value="Envia" />
+      </form>
+    </main>
+  </body>
+</html>
