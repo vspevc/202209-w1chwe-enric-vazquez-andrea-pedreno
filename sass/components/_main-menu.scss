@@ -3,6 +3,8 @@
 
 @use "../mixins/media-queries";
 
+@use "../partials/menu-link";
+
 .main-menu {
   position: absolute;
   top: measures.$header-height;
@@ -22,7 +24,7 @@
     margin: 0 auto;
     padding: 0;
     width: 100%;
-    max-width: measures.$mobile-max-width;
+    // max-width: measures.$mobile-max-width;
     list-style: none;
 
     @include media-queries.screen-min {
@@ -31,23 +33,7 @@
   }
 
   &__link {
-    cursor: pointer;
-    display: block;
-    padding: 25px measures.$mobile-horizontal-padding;
-    width: 100%;
-    border: none;
+    @extend menu-link;
     background-color: colors.$color-main-dark;
-    font-size: 1rem;
-    color: colors.$color-font-alternative;
-    text-align: left;
-    text-decoration: none;
-
-    &:hover {
-      background-color: colors.$color-main;
-    }
-
-    @include media-queries.screen-min {
-      padding: 25px measures.$desktop-horizontal-padding;
-    }
   }
 }

@@ -1,0 +1,24 @@
+@use "../variables/colors";
+@use "../variables/measures";
+
+@use "../mixins/media-queries";
+
+menu-link {
+  cursor: pointer;
+  display: block;
+  padding: 25px measures.$mobile-horizontal-padding;
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  color: colors.$color-font-alternative;
+  text-align: left;
+  text-decoration: none;
+
+  &:hover {
+    background-color: darken(colors.$color-main, 10);
+  }
+
+  @include media-queries.screen-min {
+    padding: 25px measures.$desktop-horizontal-padding;
+  }
+}
