@@ -1,12 +1,19 @@
 @use "../variables/colors";
 @use "../variables/measures";
 
+@use "../mixins/media-queries";
+
 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: Poppins, sans-serif;
   color: colors.$color-font-alternative;
   font-size: 1rem;
   font-weight: 600px;
+  text-decoration: none;
   background-color: colors.$color-accent;
+  padding: 0 25px;
   border-radius: 27px;
   border-style: none;
   height: 60px;
@@ -16,5 +23,13 @@
     @media (min-width: 1200px) {
       flex: 1.3;
     }
+  }
+
+  &--hollow {
+    border: 1px solid colors.$color-main;
+    width: fit-content;
+    height: 40px;
+    background-color: inherit;
+    color: colors.$color-main;
   }
 }

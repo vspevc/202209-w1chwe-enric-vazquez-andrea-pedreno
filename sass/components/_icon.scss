@@ -1,6 +1,11 @@
 .icon {
+  display: inline-block;
   border: none;
   background-color: inherit;
   font-size: 2rem;
   color: inherit;
+
+  &--small {
+    font-size: 1.5rem;
+  }
 }
