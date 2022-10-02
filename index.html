@@ -59,11 +59,19 @@
   <aside class="main-search-bar">
     <span class="main-search-bar__comment">Find deals on hotels, homes and much more...</span>
     <div class="main-search-bar__filters">
-      <input class="main-search-bar__filter main-search-bar__filter--big" type="select"
-        placeholder="Where are you going?" required>
-      <input class="main-search-bar__filter" type="select" placeholder="Check-in - Check-out" required>
-      <input class="main-search-bar__filter" type="select" placeholder="2 adults - 0 children" required>
-      <button type="submit" class="button button--accent-flex">Search</button>
+      <button class="main-search-bar__filter main-search-bar__filter--big" aria-label="Where are you going?">
+        <span>Where are you going?</span>
+        <i class="fa fa-chevron-right fa-xs"></i>
+      </button>
+      <button class="main-search-bar__filter" aria-label="Include the check-in and check-out dates">
+        <span>Check-in - Check-out</span>
+        <i class="fa fa-chevron-right fa-xs"></i>
+      </button>
+      <button class="main-search-bar__filter" aria-label="How many adults and children are going to travel?">
+        <span>Check-in - Check-out</span>
+        <i class="fa fa-chevron-right fa-xs"></i>
+      </button>
+      <button class="button button--accent-flex">Search</button>
     </div>
   </aside>
   <main class="main-content">
