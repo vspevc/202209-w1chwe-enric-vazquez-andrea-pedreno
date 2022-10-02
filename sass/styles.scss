@@ -5,6 +5,8 @@
 @use "./components/main-menu";
 @use "./components/secondary-menu";
 @use "./components/main_search_bar";
+@use "./components/search-box";
+@use "./components/button";
 
 * {
   box-sizing: border-box;

@@ -1,0 +1,20 @@
+@use "../variables/colors";
+@use "../variables/measures";
+
+.button {
+  font-family: Poppins, sans-serif;
+  color: colors.$color-font-alternative;
+  font-size: 1rem;
+  font-weight: 600px;
+  background-color: colors.$color-accent;
+  border-radius: 27px;
+  border-style: none;
+  height: 60px;
+  cursor: pointer;
+
+  &--accent-flex {
+    @media (min-width: 1200px) {
+      flex: 1.3;
+    }
+  }
+}

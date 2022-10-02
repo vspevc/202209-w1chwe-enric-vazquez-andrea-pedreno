@@ -2,19 +2,21 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
   <title>Travelulu</title>
-  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
 </head>
 
 <body>
-
   <!-- <header class="main-header main-header--menu-open"> -->
   <header class="main-header">
     <div class="main-header__container">
@@ -54,17 +56,59 @@
       </ul>
     </nav>
   </header>
-
   <aside class="main-search-bar">
     <span class="main-search-bar__comment">Find deals on hotels, homes and much more...</span>
     <div class="main-search-bar__filters">
       <input class="main-search-bar__filter main-search-bar__filter--big" type="select"
-        placeholder="Where are you going?" required />
-      <input class="main-search-bar__filter" type="select" placeholder="Check-in - Check-out" required />
-      <input class="main-search-bar__filter" type="select" placeholder="2 adults - 0 children" required />
-      <button class="button button--accent">Search</button>
+        placeholder="Where are you going?" required>
+      <input class="main-search-bar__filter" type="select" placeholder="Check-in - Check-out" required>
+      <input class="main-search-bar__filter" type="select" placeholder="2 adults - 0 children" required>
+      <button type="submit" class="button button--accent-flex">Search</button>
     </div>
   </aside>
+  <main class="main-content">
+    <div class="search_results">
+      <aside class="search-box">
+        <form class="search-box__filters">
+          <h2>Search</h2>
+          <div class="search-box__filter">
+            <span class="search-box__filter-description">
+              Destination/property name
+            </span>
+            <button class="search-box__filter-action" aria-label="Gold Coast">
+              <i class="fa fa-magnifying-glass"></i>
+              <span>Gold Coast</span>
+              <i class="fa fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="search-box__filter">
+            <span class="search-box__filter-description">Check-in date</span>
+            <button class="search-box__filter-action" aria-label="Check-in date">
+              <i class="fa fa-calendar-days"></i>
+              <span>Check-in date</span>
+              <i class="fa fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="search-box__filter">
+            <span class="search-box__filter-description">Check-out date</span>
+            <button class="search-box__filter-action" aria-label="Check-out date">
+              <i class="fa fa-calendar-days"></i>
+              <span>Check-out date</span>
+              <i class="fa fa-chevron-down"></i>
+            </button>
+          </div>
+          <div class="search-box__filter">
+            <span class="search-box__filter-description">Travellers</span>
+            <button class="search-box__filter-action" aria-label="Number of travellers">
+              <i class="fa fa-user"></i>
+              <span>2 adults - 0 childern</span>
+            </button>
+          </div>
+          <button type="submit" class="button button--accent">Search</button>
+        </form>
+      </aside>
+    </div>
+  </main>
 </body>
 
 </html>
