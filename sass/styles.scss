@@ -1,3 +1,8 @@
+@use "./components/icon";
+
+@use "./components/header";
+@use "./components/main-menu";
+@use "./components/secondary-menu";
 @use "./components/main_search_bar";
 
 * {
@@ -6,4 +11,8 @@
 
 html {
   font-family: Poppins, sans-serif;
+}
+
+body {
+  margin: 0;
 }
