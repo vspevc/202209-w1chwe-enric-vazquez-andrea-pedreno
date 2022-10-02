@@ -8,8 +8,13 @@
 .secondary-menu {
   background-color: colors.$color-main;
 
+  &--light {
+    background-color: inherit;
+    display: none;
+  }
+
   &__title {
-    background-color: colors.$color-main;
+    background-color: inherit;
   }
 
   &__links {
@@ -20,6 +25,11 @@
 
     &--closed {
       display: none;
+    }
+
+    &__footer-information {
+      background-color: inherit;
+      font-size: 0.5rem;
     }
   }
 
