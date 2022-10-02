@@ -1,0 +1,37 @@
+@use "../variables/colors";
+@use "../variables/measures";
+
+@use "../mixins/media-queries";
+
+.main-header {
+  position: sticky;
+  border-bottom: 1px solid colors.$color-font-main-light;
+  color: colors.$color-main;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 34px measures.$mobile-horizontal-padding;
+    max-width: measures.$mobile-max-width;
+    height: measures.$header-height;
+  }
+
+  &__title {
+    font-size: 2.2rem;
+    font-weight: 700;
+  }
+
+  &--menu-open {
+    background-color: colors.$color-main-dark;
+    color: colors.$color-font-alternative;
+  }
+
+  @include media-queries.screen-min {
+    &__container {
+      padding: 0 measures.$desktop-horizontal-padding;
+      max-width: measures.$desktop-max-width;
+    }
+  }
+}

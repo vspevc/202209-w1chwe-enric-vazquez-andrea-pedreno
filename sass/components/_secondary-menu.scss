@@ -1,0 +1,29 @@
+@use "../variables/colors";
+@use "../variables/measures";
+
+@use "../mixins/media-queries";
+
+@use "../partials/menu-link";
+
+.secondary-menu {
+  background-color: colors.$color-main;
+
+  &__title {
+    background-color: colors.$color-main;
+  }
+
+  &__links {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
+    &--closed {
+      display: none;
+    }
+  }
+
+  &__link {
+    @extend menu-link;
+  }
+}
