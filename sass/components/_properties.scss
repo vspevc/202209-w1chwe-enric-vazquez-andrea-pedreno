@@ -1,0 +1,33 @@
+@use "../variables/colors";
+@use "../variables/measures";
+
+@use "../mixins/media-queries";
+
+.properties {
+  margin: 20px 0;
+  width: 100%;
+  max-width: measures.$mobile-max-width;
+
+  & > :not(:first-child, :last-child) {
+    border-bottom: 1px solid colors.$color-font-main-light;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: colors.$color-font-main-dark;
+  }
+
+  & > article:nth-child(-n + 4) {
+    display: flex;
+  }
+
+  @include media-queries.screen-min {
+    flex: 2;
+    max-width: measures.$desktop-max-width;
+
+    & > article:nth-child(-n + 11) {
+      display: flex;
+    }
+  }
+}

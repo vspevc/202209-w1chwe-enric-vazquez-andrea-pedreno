@@ -1,0 +1,91 @@
+@use "../variables/colors";
+
+@use "../mixins/media-queries";
+
+.property-card {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px 0;
+  color: colors.$color-font-main;
+  line-height: 28px;
+
+  &__images {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+
+    @include media-queries.screen-min {
+      display: block;
+      width: 100%;
+      overflow: auto;
+      flex: 2;
+
+      & > :not(:first-child) {
+        display: none;
+      }
+    }
+  }
+
+  &__information {
+    @include media-queries.screen-min {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex: 3;
+
+      & > :not(:first-child) {
+        @include media-queries.screen-min {
+          order: 2;
+        }
+      }
+    }
+  }
+
+  &__image {
+    display: block;
+
+    @include media-queries.screen-min {
+      width: 230px;
+      aspect-ratio: 268/204;
+    }
+  }
+
+  &__score {
+    width: fit-content;
+    color: colors.$color-accent;
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: colors.$color-main;
+    text-decoration: none;
+    letter-spacing: 0.75px;
+  }
+
+  &__address {
+    font-style: normal;
+  }
+
+  &__to-map {
+    display: block;
+    margin-top: 8px;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: colors.$color-main;
+    text-decoration: none;
+  }
+
+  &__description {
+    margin-top: 5px;
+  }
+
+  @include media-queries.screen-min {
+    flex-direction: row;
+
+    & .button--hollow {
+      order: 1;
+    }
+  }
+}
